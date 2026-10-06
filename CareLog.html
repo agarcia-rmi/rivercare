@@ -390,7 +390,7 @@
     <p class="hero-sub">A plain, step-by-step guide to entering a Household Care Log. Made for people who log care now and then and want to get it right without remembering everything. Open this page whenever you have a question.</p>
     <p class="hero-q">What do you need to do?</p>
     <div class="hero-cta">
-      <a class="cta" href="#from-person"><b>Create a Case</b><span>Log care from a person's record</span></a>
+      <a class="cta" href="#from-person"><b>Create Log Entry</b><span>Log care from a person's record</span></a>
       <a class="cta" href="#from-case"><b>Update Existing Case</b><span>Add an entry to a Care Case</span></a>
       <a class="cta" href="#standalone"><b>One-time Interaction</b><span>Add a standalone entry</span></a>
     </div>
@@ -465,6 +465,11 @@
         <span class="ic">★</span>
         <p><span class="ctitle">The one rule</span>If you did it, log it. A short entry is far better than no entry. Don't wait until you have time to write it up perfectly.</p>
       </div>
+
+      <div class="callout note">
+        <span class="ic">i</span>
+        <p><span class="ctitle">Entered is not the same as done</span>Care can be <b>scheduled in advance</b>. You can log a visit for next Tuesday today, and the care team will see it coming. Entering it doesn't mark it done. When the care has actually happened, open the entry, tick <b>Completed</b>, and set the <b>Care Outcome</b> to closed. That's what tells everyone the care was provided.</p>
+      </div>
     </section>
 
     <!-- ===== 02 ROUTE ===== -->
@@ -477,7 +482,7 @@
 
       <div class="ladder ladder-links">
         <a class="lrow" href="#from-person">
-          <div class="lk">Create a Case <small>Route A · most common</small></div>
+          <div class="lk">Create Log Entry <small>Route A · most common</small></div>
           <div class="ld"><b>You know the person's name.</b> Start from their record and use the <span class="ui">Create Household Care Log</span> tool. Fastest, and you can't see anyone else's care entries by accident. <span class="go">Go to Section 03 →</span></div>
         </a>
         <a class="lrow" href="#from-case">
@@ -540,11 +545,16 @@
           <li>Check <b>Provided By</b>. It fills in with your name. Change it only if you're logging on behalf of someone else.</li>
           <li>In <b>Contact</b>, pick the person you actually cared for. It's usually already filled in.</li>
           <li>In <b>Action Date</b>, leave today's date if the care already happened today. If it happened on another day, or is scheduled for a future day, click the calendar icon and pick that date.</li>
-          <li>If the care is <b>already done</b>, tick the <b>Completed</b> box. If it's planned for later, leave it unticked.</li>
+          <li>If the care is <b>already done</b>, tick the <b>Completed</b> box. If it's planned for later, leave it unticked and come back to tick it once the care has happened.</li>
           <li>In <b>Notes</b>, write one to three short sentences. See <a href="#notes">Section 07</a> for what to include.</li>
           <li>Click <span class="ui">Save</span>. <span class="done">You'll see a success message.</span></li>
           <li>Click <span class="ui">Close</span>. You're done.</li>
         </ol>
+      </div>
+
+      <div class="callout key">
+        <span class="ic">✓</span>
+        <p><span class="ctitle">One more thing for proper tracking</span>The tool doesn't show the <b>Care Outcome</b> field. Once the care is done, open your entry under <b>Care ▸ Household Care Log</b>, click <span class="ui">Edit Record</span>, make sure <b>Completed</b> is ticked, and set <b>Care Outcome</b> to the closed option. See <a href="#after">Section 08</a>.</p>
       </div>
 
       <div class="callout tip">
@@ -568,7 +578,8 @@
           <li>Find the case in the list (use the search box) and <b>click it</b> to open.</li>
           <li>Click the <b>Care Log</b> tab on the case.</li>
           <li>Click <span class="ui">New Care Log Entry</span>.</li>
-          <li>Fill in the same fields as the tool: <b>Care Type</b>, <b>Provided By</b>, <b>Contact</b>, <b>Action Date</b>, <b>Completed</b>, and <b>Notes</b>. The Care Case is already linked for you.</li>
+          <li>Fill in the same fields as the tool: <b>Care Type</b>, <b>Provided By</b>, <b>Contact</b>, <b>Action Date</b>, and <b>Notes</b>. The Care Case is already linked for you.</li>
+          <li>If the care is already done, tick <b>Completed</b> and set <b>Care Outcome</b> to the closed option. If it's scheduled for later, leave both as they are and come back when it's done.</li>
           <li>Click <span class="ui">Save</span>. <span class="done">The entry now appears in the case's Care Log tab.</span></li>
         </ol>
       </div>
@@ -596,8 +607,8 @@
           </li>
           <li>Click the <span class="ui">Household Care</span> tab, next to the <b>General</b> and <b>Family</b> tabs at the top of the record.</li>
           <li>Click <span class="ui">New Care Log Entry</span>.</li>
-          <li>Check <b>Household</b>. It should already be filled in with this person's household. If it's blank, search for and pick the household you cared for.</li>
-          <li>Fill in <b>Care Type</b>, <b>Provided By</b>, <b>Contact</b>, <b>Action Date</b>, <b>Completed</b>, and <b>Notes</b>. Leave <b>Care Case</b> blank.</li>
+          <li>Fill in <b>Care Type</b>, <b>Provided By</b>, <b>Contact</b>, <b>Action Date</b>, and <b>Notes</b>. The household is already selected for you. Leave <b>Care Case</b> blank.</li>
+          <li>If the care is already done, tick <b>Completed</b> and set <b>Care Outcome</b> to the closed option. If it's scheduled for later, leave both as they are and come back when it's done.</li>
           <li>Click <span class="ui">Save</span>. <span class="done">Your entry is now in the Household Care Log list.</span></li>
         </ol>
       </div>
@@ -642,7 +653,11 @@
             </tr>
             <tr>
               <td><span class="fname">Completed</span><span class="deflt">defaults to unticked</span></td>
-              <td>Tick it if the care is already done. Leave it unticked if the care is planned for a future date. <b>Most entries you log after the fact should be ticked.</b></td>
+              <td>Tick it when the care has actually been provided. Leave it unticked if the care is scheduled for a future date, then come back and tick it once it's done. <b>Most entries you log after the fact should be ticked.</b></td>
+            </tr>
+            <tr>
+              <td><span class="fname">Care Outcome</span><span class="deflt">Platform record only</span></td>
+              <td>The status of the entry. When the care has been provided, set it to the <b>closed</b> option so the entry stops showing as open. This field isn't in the tool; you'll see it when you open the entry in the Platform or add one from a Care Case or the Household Care tab.</td>
             </tr>
             <tr>
               <td><span class="fname">Notes</span><span class="opt">Optional, but please fill it in</span></td>
@@ -654,7 +669,7 @@
 
       <div class="callout key">
         <span class="ic">✓</span>
-        <p><span class="ctitle">Why Completed matters</span>An entry with a past Action Date that isn't ticked Completed shows up as <b>overdue</b> on the care team's dashboard and turns the case red. If the care is done, tick the box.</p>
+        <p><span class="ctitle">Why Completed and Care Outcome matter</span>An entry with a past Action Date that isn't ticked Completed shows up as <b>overdue</b> on the care team's dashboard and turns the case red. An entry whose Care Outcome is still open looks like care that's still waiting to happen. When the care is done, do both: tick <b>Completed</b> and set <b>Care Outcome</b> to closed.</p>
       </div>
     </section>
 
@@ -719,11 +734,12 @@
       </div>
 
       <div class="card proc">
-        <div class="proc-top"><h4>Mark an entry as completed, or fix a mistake</h4><span class="badge platform">Platform</span></div>
+        <div class="proc-top"><h4>Mark an entry as done, or fix a mistake</h4><span class="badge platform">Platform</span></div>
         <ol class="steps">
           <li>Open the entry (see above).</li>
           <li>Click <span class="ui">Edit Record</span>.</li>
-          <li>Make your change: tick <b>Completed</b>, correct the <b>Action Date</b>, fix the <b>Notes</b>, or choose a different <b>Contact</b>.</li>
+          <li>If the care has been provided, tick <b>Completed</b> <i>and</i> set <b>Care Outcome</b> to the closed option. Both are needed for proper tracking.</li>
+          <li>Fix anything else: correct the <b>Action Date</b>, update the <b>Notes</b>, or choose a different <b>Contact</b>.</li>
           <li>Click <span class="ui">Save</span>. <span class="done">The entry updates right away.</span></li>
         </ol>
       </div>
@@ -775,11 +791,11 @@
         </div>
         <div class="lrow">
           <div class="lk">I made the entry but forgot to tick Completed.</div>
-          <div class="ld">Open it from <b>Care ▸ Household Care Log</b>, click <span class="ui">Edit Record</span>, tick <b>Completed</b>, and save. See <a href="#after">Section 08</a>.</div>
+          <div class="ld">Open it from <b>Care ▸ Household Care Log</b>, click <span class="ui">Edit Record</span>, tick <b>Completed</b>, set <b>Care Outcome</b> to closed, and save. See <a href="#after">Section 08</a>.</div>
         </div>
         <div class="lrow">
           <div class="lk">I logged care that happens next week. Is that okay?</div>
-          <div class="ld">Yes. Set the Action Date to next week and leave Completed unticked. When you've done it, open the entry and tick Completed.</div>
+          <div class="ld">Yes. Care can be scheduled in advance. Set the Action Date to next week and leave Completed unticked. When you've done it, open the entry, tick Completed, and set Care Outcome to closed.</div>
         </div>
       </div>
     </section>
@@ -799,7 +815,7 @@
           <li>Click <span class="ui">Tools</span> ▸ <span class="ui">Create Household Care Log</span>.</li>
           <li>Pick the <b>Care Type</b>. Pick the <b>Care Case</b> if there is one.</li>
           <li>Set the <b>Action Date</b>, tick <b>Completed</b> if it's done, and write a short <b>Note</b> (what happened, how they are, what's next).</li>
-          <li>Click <span class="ui">Save</span>, then <span class="ui">Close</span>.</li>
+          <li>Click <span class="ui">Save</span>, then <span class="ui">Close</span>. Once the care is done, open the entry in the Platform and set <b>Care Outcome</b> to closed.</li>
         </ol>
       </div>
 
@@ -812,7 +828,8 @@
             <li><b>Care Type</b>What you did (Phone Call, Hospital Visit, Meal).</li>
             <li><b>Provided By</b>Who gave the care. Defaults to you.</li>
             <li><b>Action Date</b>When the care happened or is scheduled to happen.</li>
-            <li><b>Completed</b>Tick it when the care is done.</li>
+            <li><b>Completed</b>Tick it when the care has actually been provided.</li>
+            <li><b>Care Outcome</b>The entry's status. Set it to closed once the care is done.</li>
             <li><b>Care Manager</b>The staff member who oversees a Care Case.</li>
           </ul>
         </div>
